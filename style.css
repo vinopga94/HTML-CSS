@@ -141,10 +141,10 @@ header {
     gap: 60px;
     align-items: center;
 }
-.about-image {
+.profil-image {
     text-align: center;
 }
-.about-image img {
+.profil-image img {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
@@ -153,12 +153,12 @@ header {
 
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
-.about-image p {
+.profil-image p {
     margin-top: 10px;
     color: #777;
     font-style: italic;
 }
-.about-text p {
+.profil-text p {
     margin-bottom: 18px;
 }
 .highlight {
@@ -261,7 +261,7 @@ header {
 }
 
 /* ACTIVITY */
-.activity-container {
+.activity {
     margin-top: 80px;
 
     display: grid;
