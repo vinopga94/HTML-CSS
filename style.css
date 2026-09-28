@@ -1,0 +1,379 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background-color: #dfe5e2;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navigation {
+    height: 70px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #176b5b;
+}
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+.menu-list a {
+    text-decoration: none;
+    color: #263238;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.menu-list a:hover {
+    color: #176b5b;
+}
+
+/*  HOME PAGE */
+.home-page {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background: url("Background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+.home-content {
+    max-width: 700px;
+}
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    color: #ffff00;
+    font-weight: bold;
+}
+.home-page h1 {
+    font-size: 60px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+.home-page h1 span {
+    color: #5de1c0;
+}
+.home-page p:not(.subtitle) {
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color :#756f5d
+}
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #ffffff;
+    color: #176b5b;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: #a7e3d4;
+    transform: translateY(-3px);
+}
+
+/* SECTION */
+.section {
+    padding: 90px 10%;
+    background-color: #ffffff;
+}
+.title {
+    margin-bottom: 45px;
+}
+.title p {
+    color: #176b5b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+.title h2 {
+    font-size: 36px;
+    color: #183b35;
+}
+
+
+/* ABOUT */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+.about-image {
+    text-align: center;
+}
+.about-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+.about-image p {
+    margin-top: 10px;
+    color: #777;
+    font-style: italic;
+}
+.about-text p {
+    margin-bottom: 18px;
+}
+.highlight {
+    color: #109cd0;
+    font-weight: bold;
+}
+.social-button {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 11px 20px;
+
+    border: 2px solid #176b5b;
+    border-radius: 5px;
+
+    color: #176b5b;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.social-button:hover {
+    background-color: #176b5b;
+    color: white;
+}
+
+
+/* DESTINATION */
+.destination-section {
+    padding: 90px 10%;
+    background-color: #eef5f2;
+}
+.section-description {
+    max-width: 850px;
+    margin-bottom: 45px;
+    color: #5f6f6a;
+}
+
+
+/* DESTINATION CARD */
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.destination-card {
+    position: relative;
+
+    min-height: 230px;
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+.destination-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.card-number {
+    color: #060606;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.destination-card h3 {
+    font-size: 23px;
+    color: #101010;
+    margin-bottom: 5px;
+}
+.destination-card p {
+    color: #69eff6;
+    margin-bottom: 20px;
+}
+.destination-card span {
+    color: #0570ae;
+    font-size: 13px;
+    font-weight: bold;
+}
+.destination-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-01 {
+    background-image: url("Merbabu.jpg");
+}
+.card-02 {
+    background-image: url("Ranukumbolo.jpeg");
+}
+.card-03 {
+    background-image: url("sind.jpg");
+}
+
+/* ACTIVITY */
+.activity-container {
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 45px;
+    background-color: #183b35;
+    color: white;
+    border-radius: 10px;
+}
+.activity-text p {
+    color: #a7e3d4;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.activity-text h2 {
+    font-size: 30px;
+    margin-top: 8px;
+}
+.activity-list {
+    padding-left: 25px;
+}
+.activity-list li {
+    padding: 8px 0;
+    color: #e4f2ee;
+}
+
+/* TABLE */
+.table-container {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+th {
+    padding: 17px;
+    text-align: left;
+    background-color: #183b35;
+    color: white;
+}
+td {
+    padding: 17px;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover td {
+    background-color: #eef5f2;
+}
+
+/* FOOTER */
+footer {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #102d28;
+    color: white;
+}
+footer h2 {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+footer p {
+    color: #bcd3ce;
+}
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 45px;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+    .activity-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 5%;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .hero {
+        min-height: 550px;
+        padding: 60px 7%;
+    }
+    .hero h1 {
+        font-size: 38px;
+    }
+    .section,
+    .destination-section {
+        padding: 65px 7%;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+    .activity-container {
+        padding: 30px;
+    }
+}
